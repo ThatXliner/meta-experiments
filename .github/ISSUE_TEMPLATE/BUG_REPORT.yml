@@ -33,8 +33,8 @@ body:
     id: other-info
     attributes:
       label: Other information
-      description: Other additional information such as environment, debug logs, etc.
-      placeholder: "OS: iPhone 69\nKernel version: your.mom"
+      description: Other additional information that may deem useful. If you're sending code, please make an [MCVE](https://stackoverflow.com/help/minimal-reproducible-example)
+      placeholder: "Environment, debug logs, etc."
     validations:
       required: false
   - type: input
