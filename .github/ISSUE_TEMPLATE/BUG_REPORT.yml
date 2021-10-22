@@ -7,6 +7,18 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report! 🤗
+  - type: checkboxes
+    id: generic-bug-report-checklist
+    attributes:
+      label: Prerequisites 
+      description: "Before you continue make sure you have done all of the following:"
+      options:
+        - label: I have searched the [issues](https://github.com/{{ cookiecutter.username }}/{{ cookiecutter.pypi_name }}/issues) and believe that it has not already been reported
+          required: true
+        - label: I have made sure this bug reproduces on the latest version
+          required: true
+        - label: "I agree to follow the [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)"
+          required: true
   - type: textarea
     id: bug-info
     attributes:
@@ -34,7 +46,7 @@ body:
     attributes:
       label: Other information
       description: Other additional information that may deem useful. If you're sending code, please make an [MCVE](https://stackoverflow.com/help/minimal-reproducible-example)
-      placeholder: "Environment, debug logs, etc."
+      placeholder: "Environment, OS, debug logs, etc."
     validations:
       required: false
   - type: input
@@ -46,15 +58,3 @@ body:
       value: "I can reproduce this bug 100% of the time"
     validations:
       required: true
-  - type: checkboxes
-    id: generic-bug-report-checklist
-    attributes:
-      label: Prerequisites 
-      description: "Make sure you have done all of the following:"
-      options:
-        - label: I have searched the [issues](https://github.com/{{ cookiecutter.username }}/{{ cookiecutter.pypi_name }}/issues) and believe that it has not already been reported
-          required: true
-        - label: I have made sure this bug reproduces on the latest version
-          required: true
-        - label: "I agree to follow this project's Code of Conduct"
-          required: true
