@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report! :hugging_face:
+        Thanks for taking the time to fill out this bug report! 🤗
   - type: textarea
     id: bug-info
     attributes:
@@ -56,5 +56,5 @@ body:
           required: true
         - label: I have made sure this bug reproduces on the latest version
           required: true
-        - label: I agree to follow this project's Code of Conduct
+        - label: "I agree to follow this project's Code of Conduct"
           required: true
