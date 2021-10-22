@@ -34,8 +34,9 @@ body:
     attributes:
       label: Other information
       description: Other additional information such as environment, debug logs, etc.
-      placeholder: |
+      placeholder: >
         Here's my logs.txt:
+
         ```
         GET https://www.youtube.com/watch?v=dQw4w9WgXcQ -> 200
         STATUS rickrolled: true
